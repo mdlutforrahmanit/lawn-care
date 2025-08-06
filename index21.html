@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional lawn care services in Alabama. Serving Montgomery, Hoover, and Birmingham with expert mowing, fertilization, weed control, and more. Get your free estimate today!">
+    <title>Greenscape | Expert Lawn Care Services in Alabama</title>
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Greenscape Lawn Care",
+      "image": "images/lawn-care-bg.jpg",
+      "@id": "",
+      "url": "https://greenscapelawncare.com",
+      "telephone": "+12055551234",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Garden Way",
+        "addressLocality": "Birmingham",
+        "addressRegion": "AL",
+        "postalCode": "35242",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 33.5207,
+        "longitude": -86.8025
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "07:00",
+        "closes": "18:00"
+      },
+      "priceRange": "$90 - $260+",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "127"
+      }
+    }
+    </script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Lexend', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lexend:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans text-gray-800 bg-white antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-display font-bold text-primary-700">Greenscape</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-600 hover:text-primary-600 font-medium transition">Services</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-primary-600 font-medium transition">Pricing</a>
+                    <a href="#about" class="text-gray-600 hover:text-primary-600 font-medium transition">About</a>
+                    <a href="#projects" class="text-gray-600 hover:text-primary-600 font-medium transition">Projects</a>
+                    <a href="#contact" class="text-gray-600 hover:text-primary-600 font-medium transition">Contact</a>
+                    <div class="flex space-x-3">
+                        <a href="#estimate" class="px-4 py-2 border border-primary-600 text-primary-600 font-medium rounded-lg hover:bg-primary-50 transition">Free Estimate</a>
+                        <a href="tel:+12055551234" class="px-4 py-2 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition">Call Now</a>
+                    </div>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button p-2 rounded-md text-gray-700 hover:text-primary-600 hover:bg-gray-100 focus:outline-none">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden md:hidden fixed inset-0 z-40 bg-white pt-20 px-4">
+        <div class="flex flex-col space-y-4">
+            <a href="#services" class="text-gray-600 hover:text-primary-600 font-medium py-2 transition">Services</a>
+            <a href="#pricing" class="text-gray-600 hover:text-primary-600 font-medium py-2 transition">Pricing</a>
+            <a href="#about" class="text-gray-600 hover:text-primary-600 font-medium py-2 transition">About</a>
+            <a href="#projects" class="text-gray-600 hover:text-primary-600 font-medium py-2 transition">Projects</a>
+            <a href="#contact" class="text-gray-600 hover:text-primary-600 font-medium py-2 transition">Contact</a>
+            <div class="flex flex-col space-y-3 pt-4">
+                <a href="#estimate" class="px-4 py-2 border border-primary-600 text-primary-600 font-medium rounded-lg hover:bg-primary-50 transition text-center">Free Estimate</a>
+                <a href="tel:+12055551234" class="px-4 py-2 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition text-center">Call Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section - Split Screen Layout -->
+    <section class="pt-20 md:min-h-screen">
+        <div class="flex flex-col md:flex-row">
+            <div class="w-full md:w-1/2 bg-primary-50 flex items-center justify-center p-8 md:p-12 lg:p-16 order-2 md:order-1">
+                <div class="max-w-lg">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 leading-tight mb-4">Expert Lawn Care in Alabama</h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-8">Serving Local Homes & Businesses with Fast, Reliable Service</p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                        <a href="#estimate" class="px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition text-center">Get Your Free Estimate</a>
+                        <a href="tel:+12055551234" class="px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition text-center">Call Now</a>
+                    </div>
+                    <div class="flex flex-wrap gap-6">
+                        <div class="flex items-center gap-2">
+                            <div class="w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center text-primary-600">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="text-sm font-medium">Licensed & Insured</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center text-primary-600">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <span class="text-sm font-medium">Fast Turnaround</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center text-primary-600">
+                                <i class="fas fa-thumbs-up"></i>
+                            </div>
+                            <span class="text-sm font-medium">Satisfaction Guaranteed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 h-96 md:h-auto bg-gray-200 order-1 md:order-2">
+                <img src="images/lawn-care-bg.jpg" alt="Professional lawn care service in Alabama" class="w-full h-full object-cover" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/2">
+                    <img src="images/lawn-care-team.jpg" alt="Greenscape lawn care team in Alabama" class="rounded-2xl shadow-lg w-full" loading="lazy">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-6">Our Story in Alabama</h2>
+                    <p class="text-lg text-gray-600 mb-6">Founded in 2012, Greenscape has grown from a small family operation to one of the most trusted lawn care providers in Montgomery, Hoover, and Birmingham. What started as a passion for creating beautiful outdoor spaces has become our life's work.</p>
+                    <p class="text-lg text-gray-600 mb-6">We understand Alabama's unique climate and soil conditions, allowing us to deliver superior results that generic national chains simply can't match. Our team of licensed professionals takes pride in every blade of grass we cut and every garden we nurture.</p>
+                    <p class="text-lg text-gray-600 mb-8">As a locally-owned business, we're committed to our community. We use eco-friendly products whenever possible, support local suppliers, and treat every customer like family.</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center text-primary-600">
+                            <i class="fas fa-leaf text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-gray-900">John & Sarah Henderson</h3>
+                            <p class="text-gray-600">Owners, Greenscape Lawn Care</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mb-4">
+                        <i class="fas fa-star text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-gray-900 mb-1">4.9+ Stars</h3>
+                    <p class="text-gray-600">Google Rating</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mb-4">
+                        <i class="fas fa-shield-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-gray-900 mb-1">Fully Insured</h3>
+                    <p class="text-gray-600">Peace of Mind</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mb-4">
+                        <i class="fas fa-id-card text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-gray-900 mb-1">Licensed</h3>
+                    <p class="text-gray-600">Professionals</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mb-4">
+                        <i class="fas fa-award text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-gray-900 mb-1">10+ Years</h3>
+                    <p class="text-gray-600">In Business</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section - Z-Pattern Layout -->
+    <section id="services" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">Our Lawn Care Services</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Comprehensive care for residential and commercial properties across Alabama's unique landscapes.</p>
+            </div>
+
+            <!-- Service 1 -->
+            <div class="flex flex-col lg:flex-row gap-12 items-center mb-16">
+                <div class="lg:w-1/2">
+                    <img src="images/lawn-mowing.jpg" alt="Lawn mowing service in Alabama" class="rounded-2xl shadow-lg w-full" loading="lazy">
+                </div>
+                <div class="lg:w-1/2 lg:pl-12">
+                    <h3 class="text-2xl font-display font-bold text-gray-900 mb-4">Lawn Mowing</h3>
+                    <p class="text-gray-600 mb-6">Our precision mowing techniques ensure your lawn stays healthy and looks immaculate. We adjust cutting height seasonally to promote optimal growth for Alabama's grass varieties.</p>
+                    <ul class="grid grid-cols-2 gap-4 mb-6">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-primary-600 mt-1"></i>
+                            <span>Weekly, bi-weekly, or monthly</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-primary-600 mt-1"></i>
+                            <span>Edging included</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-primary-600 mt-1"></i>
+                            <span>Clippings removal</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-primary-600 mt-1"></i>
+                            <span>Pattern variations</span>
+                        </li>
+                    </ul>
+                    <a href="#estimate" class="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition">
+                        Get a quote <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="flex flex-col lg:flex-row-reverse gap-12 items-center mb-16">
+                <div class="lg:w-1/2">
+                    <img src="images/edging-trimming.jpg" alt="Edging and trimming service in Alabama" class="rounded-2xl shadow-lg w-full" loading="lazy">
+                </div>
+                <div class="lg:w-1/2 lg:pr-12">
+                    <h3 class="text-2xl font-display font-bold text-gray-900 mb-4">Edging & Trimming</h3>
+                    <p class="text-gray-600 mb-6">Crisp, clean edges define a professionally maintained landscape. Our detailed edging and trimming services give your property that polished look that stands out in any Birmingham neighborhood.</p>
+                    <ul class="grid grid-cols-2 gap-4 mb-6">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-primary-600 mt-1"></i>
+                            <span>Walkway edging</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-primary-600 mt-1"></i>
+                            <span>Shrub trimming</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-primary-600 mt-1"></i>
+                            <span>Border definition</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-primary-600 mt-1"></i>
+                            <span>Debris removal</span>
+                        </li>
+                    </ul>
+                    <a href="#estimate" class="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition">
+                        Get a quote <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="flex flex-col lg:flex-row gap-12 items-center mb-16">
+                <div class="lg:w-1/2">
+                    <img src="images/fertilization.jpg" alt="Fertilization service in Alabama" class="rounded-2xl shadow-lg w-full" loading="lazy">
+                </div>
+                <div class="lg:w-1/2 lg:pl-12">
+                    <h3 class="text-2xl font-display font-bold text-gray-900 mb-4">Fertilization</h3>
+                    <p class="text-gray-600 mb-6">Alabama's soil requires specific nutrients for optimal grass health. Our customized fertilization programs are timed perfectly with growing seasons to give your lawn what it needs when it needs it.</p>
+                    <ul class="grid grid-cols-2 gap-4 mb-6">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-primary-600 mt-1"></i>
+                            <span>Soil analysis</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-primary-600 mt-1"></i>
+                            <span>Seasonal programs</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-primary-600 mt-1"></i>
+                            <span>Organic options</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-primary-600 mt-1"></i>
+                            <span>Slow-release formulas</span>
+                        </li>
+                    </ul>
+                    <a href="#estimate" class="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition">
+                        Get a quote <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Additional services grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mb-6">
+                        <i class="fas fa-spray-can text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-gray-900 mb-3">Weed Control</h3>
+                    <p class="text-gray-600 mb-4">Targeted treatments to eliminate weeds without harming your lawn. Our pre-emergent and post-emergent solutions keep your property weed-free.</p>
+                    <a href="#estimate" class="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition text-sm">
+                        Learn more <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mb-6">
+                        <i class="fas fa-leaf text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-gray-900 mb-3">Seasonal Cleanups</h3>
+                    <p class="text-gray-600 mb-4">Spring and fall cleanups to prepare your landscape for the changing seasons. We handle leaf removal, debris clearing, and bed preparation.</p>
+                    <a href="#estimate" class="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition text-sm">
+                        Learn more <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mb-6">
+                        <i class="fas fa-seedling text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-gray-900 mb-3">Aeration</h3>
+                    <p class="text-gray-600 mb-4">Core aeration relieves soil compaction, allowing water, air, and nutrients to reach grass roots more effectively for a thicker, healthier lawn.</p>
+                    <a href="#estimate" class="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition text-sm">
+                        Learn more <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mb-6">
+                        <i class="fas fa-building text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-gray-900 mb-3">Commercial Lawn Care</h3>
+                    <p class="text-gray-600 mb-4">Customized maintenance programs for businesses, HOAs, and properties of all sizes. We work around your schedule to minimize disruption.</p>
+                    <a href="#estimate" class="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition text-sm">
+                        Learn more <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mb-6">
+                        <i class="fas fa-tree text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-gray-900 mb-3">Shrub & Tree Care</h3>
+                    <p class="text-gray-600 mb-4">Pruning, shaping, and health assessments for your woody plants. Proper care extends their life and enhances your property's beauty.</p>
+                    <a href="#estimate" class="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition text-sm">
+                        Learn more <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mb-6">
+                        <i class="fas fa-tint text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-gray-900 mb-3">Irrigation Services</h3>
+                    <p class="text-gray-600 mb-4">Installation, maintenance, and seasonal adjustments for efficient watering systems that conserve water while keeping your landscape lush.</p>
+                    <a href="#estimate" class="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition text-sm">
+                        Learn more <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Table -->
+    <section id="pricing" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">Price Ranges for Annual Maintenance Plans</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Transparent pricing for residential lawn care services in Alabama</p>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-2xl overflow-hidden shadow-sm">
+                    <thead class="bg-primary-600 text-white">
+                        <tr>
+                            <th class="py-4 px-6 text-left font-display font-bold">Yard Size</th>
+                            <th class="py-4 px-6 text-left font-display font-bold">Sqft Range</th>
+                            <th class="py-4 px-6 text-left font-display font-bold">Estimate Price Range Per Month</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="py-4 px-6 font-medium">Small</td>
+                            <td class="py-4 px-6 text-gray-600">5,000 - 8,500 sqft</td>
+                            <td class="py-4 px-6 font-medium text-primary-600">$90 - $130</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition bg-gray-50">
+                            <td class="py-4 px-6 font-medium">Medium</td>
+                            <td class="py-4 px-6 text-gray-600">8,501 - 14,000 sqft</td>
+                            <td class="py-4 px-6 font-medium text-primary-600">$135 - $185</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="py-4 px-6 font-medium">Large</td>
+                            <td class="py-4 px-6 text-gray-600">14,001 - 20,000 sqft</td>
+                            <td class="py-4 px-6 font-medium text-primary-600">$190 - $260</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition bg-gray-50">
+                            <td class="py-4 px-6 font-medium">X-Large</td>
+                            <td class="py-4 px-6 text-gray-600">20,000+ sqft</td>
+                            <td class="py-4 px-6 font-medium text-primary-600">$260+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mt-8 text-center text-gray-600 max-w-3xl mx-auto">
+                <p>Each property receives a personalized quote based on landscape characteristics and service frequency. Commercial properties and one-time services priced separately.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Offers -->
+    <section class="py-16 bg-primary-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-display font-bold mb-12 text-center">Save Some Money Today!</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-2xl p-8 text-gray-800 shadow-lg">
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <span class="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary-700 text-sm font-medium mb-3">Limited Time</span>
+                            <h3 class="text-2xl font-display font-bold mb-2">$50 Referral Bonus</h3>
+                        </div>
+                        <div class="text-4xl font-display font-bold text-primary-600">$50</div>
+                    </div>
+                    <p class="text-gray-600 mb-6">Refer a friend who signs up for 5+ services and get $50 credit applied to your account. Perfect for neighbors looking to improve their curb appeal together!</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm font-medium bg-gray-100 px-3 py-1 rounded-full">Expires June 30, 2025</span>
+                        <a href="#estimate" class="px-6 py-2 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition">Redeem Offer</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-8 text-gray-800 shadow-lg">
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <span class="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary-700 text-sm font-medium mb-3">Seasonal Special</span>
+                            <h3 class="text-2xl font-display font-bold mb-2">$10 Off Tick & Flea Control</h3>
+                        </div>
+                        <div class="text-4xl font-display font-bold text-primary-600">$10</div>
+                    </div>
+                    <p class="text-gray-600 mb-6">With Alabama's high Lyme disease risks, protect your family and pets with our professional-grade yard treatments. Limited availability for summer 2025.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm font-medium bg-gray-100 px-3 py-1 rounded-full">Expires June 30, 2025</span>
+                        <a href="#estimate" class="px-6 py-2 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition">Redeem Offer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Gallery -->
+    <section id="projects" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">Our Recent Projects</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Transforming Alabama landscapes one property at a time</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
+                    <img src="images/lawncare.jpg" alt="Spring cleanup in Montgomery" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                        <div>
+                            <h3 class="text-xl font-display font-bold text-white mb-1">Spring Cleanup</h3>
+                            <p class="text-gray-200">Montgomery, AL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
+                    <img src="images/lawn-mowing.jpg" alt="Commercial lawn care in Birmingham" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                        <div>
+                            <h3 class="text-xl font-display font-bold text-white mb-1">Commercial Property</h3>
+                            <p class="text-gray-200">Birmingham, AL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
+                    <img src="images/fertilization.jpg" alt="Fertilization project in Hoover" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                        <div>
+                            <h3 class="text-xl font-display font-bold text-white mb-1">Fertilization Project</h3>
+                            <p class="text-gray-200">Hoover, AL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
+                    <img src="images/weed-control.jpg" alt="Weed control treatment in Vestavia" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                        <div>
+                            <h3 class="text-xl font-display font-bold text-white mb-1">Weed Control</h3>
+                            <p class="text-gray-200">Vestavia, AL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
+                    <img src="images/aeration.jpg" alt="Aeration service in Homewood" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                        <div>
+                            <h3 class="text-xl font-display font-bold text-white mb-1">Aeration Service</h3>
+                            <p class="text-gray-200">Homewood, AL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
+                    <img src="images/cleanup.jpg" alt="Seasonal cleanup in Mountain Brook" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                        <div>
+                            <h3 class="text-xl font-display font-bold text-white mb-1">Fall Cleanup</h3>
+                            <p class="text-gray-200">Mountain Brook, AL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition">
+                    See More Projects <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="estimate" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-primary-600 p-8 md:p-12 text-white">
+                        <h2 class="text-3xl font-display font-bold mb-4">Ready for a Beautiful Lawn?</h2>
+                        <p class="text-primary-100 mb-6">Complete this form to request your free, no-obligation estimate. We'll contact you within 24 hours to discuss your lawn care needs.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i class="fas fa-check-circle text-primary-200"></i>
+                                </div>
+                                <p class="text-primary-100">No pushy sales calls</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i class="fas fa-check-circle text-primary-200"></i>
+                                </div>
+                                <p class="text-primary-100">Customized service plans</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i class="fas fa-check-circle text-primary-200"></i>
+                                </div>
+                                <p class="text-primary-100">100% satisfaction guarantee</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8 md:p-12">
+                        <form id="estimateForm" class="space-y-6">
+                            <div>
+                                <label for="fullName" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                                <input type="text" id="fullName" name="fullName" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500" required>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500" required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                                    <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500" required>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="serviceType" class="block text-sm font-medium text-gray-700 mb-1">Service Type</label>
+                                <select id="serviceType" name="serviceType" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500" required>
+                                    <option value="" disabled selected>Select a service</option>
+                                    <option value="lawn-mowing">Lawn Mowing</option>
+                                    <option value="edging-trimming">Edging & Trimming</option>
+                                    <option value="fertilization">Fertilization</option>
+                                    <option value="weed-control">Weed Control</option>
+                                    <option value="seasonal-cleanup">Seasonal Cleanup</option>
+                                    <option value="aeration">Aeration</option>
+                                    <option value="commercial">Commercial Lawn Care</option>
+                                    <option value="other">Other Service</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-3">Service Frequency</label>
+                                <div class="grid grid-cols-3 gap-3">
+                                    <div>
+                                        <input type="radio" id="weekly" name="frequency" value="weekly" class="hidden peer" checked>
+                                        <label for="weekly" class="flex flex-col items-center justify-center p-3 border border-gray-300 rounded-lg cursor-pointer peer-checked:border-primary-500 peer-checked:bg-primary-50">
+                                            <span class="text-sm font-medium">Weekly</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="biweekly" name="frequency" value="biweekly" class="hidden peer">
+                                        <label for="biweekly" class="flex flex-col items-center justify-center p-3 border border-gray-300 rounded-lg cursor-pointer peer-checked:border-primary-500 peer-checked:bg-primary-50">
+                                            <span class="text-sm font-medium">Bi-Weekly</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="monthly" name="frequency" value="monthly" class="hidden peer">
+                                        <label for="monthly" class="flex flex-col items-center justify-center p-3 border border-gray-300 rounded-lg cursor-pointer peer-checked:border-primary-500 peer-checked:bg-primary-50">
+                                            <span class="text-sm font-medium">Monthly</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="preferredDate" class="block text-sm font-medium text-gray-700 mb-1">Preferred Start Date</label>
+                                <input type="date" id="preferredDate" name="preferredDate" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500">
+                            </div>
+                            <div>
+                                <label for="notes" class="block text-sm font-medium text-gray-700 mb-1">Additional Notes</label>
+                                <textarea id="notes" name="notes" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+                                    Request Free Estimate
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Hear from Alabama homeowners and businesses who trust Greenscape with their landscapes</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-2xl p-8">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <blockquote class="text-gray-600 mb-6">
+                        <p>"Greenscape transformed our neglected yard into the best-looking lawn in the neighborhood. Their attention to detail and knowledge of Alabama grasses is unmatched. We've been clients for 5 years now!"</p>
+                    </blockquote>
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Sarah J." loading="lazy">
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-900">Sarah J.</p>
+                            <p class="text-sm text-gray-500">Hoover, AL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-8">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <blockquote class="text-gray-600 mb-6">
+                        <p>"As a property manager in Birmingham, I rely on Greenscape for multiple locations. They're always professional, show up on time, and handle everything from mowing to seasonal cleanups. Highly recommend!"</p>
+                    </blockquote>
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Michael T." loading="lazy">
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-900">Michael T.</p>
+                            <p class="text-sm text-gray-500">Birmingham, AL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-8">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <blockquote class="text-gray-600 mb-6">
+                        <p>"After trying several lawn services in Montgomery, we finally found Greenscape. Their fertilization program eliminated our weed problems and gave us the greenest grass we've ever had. Worth every penny."</p>
+                    </blockquote>
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="David R." loading="lazy">
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-900">David R.</p>
+                            <p class="text-sm text-gray-500">Montgomery, AL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">Why Choose Greenscape</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">The Alabama lawn care experts you can trust</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-2xl p-8 text-center hover:shadow-md transition">
+                    <div class="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mx-auto mb-6">
+                        <i class="fas fa-map-marked-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-gray-900 mb-3">Local Expertise</h3>
+                    <p class="text-gray-600">We understand Alabama's climate, soil, and grass types better than anyone. Our solutions are tailored specifically for our region.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 text-center hover:shadow-md transition">
+                    <div class="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mx-auto mb-6">
+                        <i class="fas fa-leaf text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-gray-900 mb-3">Eco-Friendly</h3>
+                    <p class="text-gray-600">We prioritize environmentally responsible products and practices that are safe for your family, pets, and local ecosystem.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 text-center hover:shadow-md transition">
+                    <div class="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mx-auto mb-6">
+                        <i class="fas fa-calendar-check text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-gray-900 mb-3">Reliable Scheduling</h3>
+                    <p class="text-gray-600">Rain or shine, we stick to our schedule. You'll never wonder when we're coming - we communicate clearly and show up on time.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 text-center hover:shadow-md transition">
+                    <div class="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mx-auto mb-6">
+                        <i class="fas fa-home text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-gray-900 mb-3">Family-Owned</h3>
+                    <p class="text-gray-600">As a local family business, we treat every customer like neighbors. Our reputation means everything to us.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-6">Contact Greenscape</h2>
+                    <p class="text-lg text-gray-600 mb-8">Have questions or ready to schedule service? Reach out to our friendly team today.</p>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-phone-alt text-primary-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-gray-900 mb-1">Call Us</h3>
+                                <a href="tel:+12055551234" class="text-gray-600 hover:text-primary-600 transition">(205) 555-1234</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-envelope text-primary-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-gray-900 mb-1">Email Us</h3>
+                                <a href="mailto:hello@greenscapelawncare.com" class="text-gray-600 hover:text-primary-600 transition">hello@greenscapelawncare.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-map-marker-alt text-primary-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-gray-900 mb-1">Service Area</h3>
+                                <p class="text-gray-600">Serving Montgomery, Hoover, Birmingham, and surrounding communities in Central Alabama</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-clock text-primary-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-gray-900 mb-1">Business Hours</h3>
+                                <p class="text-gray-600">Monday - Friday: 7:00 AM - 6:00 PM<br>Saturday: 8:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                                <div class="mt-3">
+                                    <span class="inline-block px-3 py-1 rounded-full bg-green-100 text-green-800 text-sm font-medium">
+                                        Now Booking for This Week!
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-primary-100 hover:text-primary-600 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-primary-100 hover:text-primary-600 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-primary-100 hover:text-primary-600 transition">
+                            <i class="fab fa-yelp"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-primary-100 hover:text-primary-600 transition">
+                            <i class="fab fa-google"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="h-full rounded-2xl overflow-hidden shadow-lg">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212270.7411490622!2d-86.9004906!3d33.5275113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888911c5681aa287%3A0x4b4e82d4f8a5576e!2sBirmingham%2C%20AL!5e0!3m2!1sen!2sus!4v1689876543210!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h3 class="text-xl font-display font-bold mb-6">Greenscape</h3>
+                    <p class="text-gray-400 mb-6">Alabama's trusted lawn care experts since 2012. Family-owned and operated with a commitment to quality service and customer satisfaction.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 hover:bg-primary-600 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 hover:bg-primary-600 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 hover:bg-primary-600 hover:text-white transition">
+                            <i class="fab fa-yelp"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 hover:bg-primary-600 hover:text-white transition">
+                            <i class="fab fa-google"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-display font-bold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="#pricing" class="text-gray-400 hover:text-white transition">Pricing</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#projects" class="text-gray-400 hover:text-white transition">Projects</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                        <li><a href="#estimate" class="text-gray-400 hover:text-white transition">Free Estimate</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-display font-bold mb-6">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Lawn Mowing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Edging & Trimming</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Fertilization</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Weed Control</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Seasonal Cleanups</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Commercial Care</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-display font-bold mb-6">Contact Info</h3>
+                    <address class="not-italic text-gray-400 space-y-3">
+                        <p>123 Garden Way<br>Birmingham, AL 35242</p>
+                        <p><a href="tel:+12055551234" class="hover:text-white transition">(205) 555-1234</a></p>
+                        <p><a href="mailto:hello@greenscapelawncare.com" class="hover:text-white transition">hello@greenscapelawncare.com</a></p>
+                        <p>Licensed & Insured<br>AL License #LC123456</p>
+                    </address>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2023 Greenscape Lawn Care. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed CTA Button (Mobile) -->
+    <div class="fixed bottom-6 right-6 z-40 md:hidden">
+        <a href="tel:+12055551234" class="w-14 h-14 rounded-full bg-primary-600 shadow-lg flex items-center justify-center text-white animate-bounce">
+            <i class="fas fa-phone-alt text-xl"></i>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Form submission
+        const estimateForm = document.getElementById('estimateForm');
+        if (estimateForm) {
+            estimateForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                // Here you would typically send the form data to your server or Mailchimp
+                // For demo purposes, we'll just show an alert
+                alert('Thank you for your request! We will contact you shortly.');
+                estimateForm.reset();
+                
+                // In a real implementation, you might redirect to a thank you page:
+                // window.location.href = '/thank-you';
+            });
+        }
+
+        // Simple animation on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.group, [class*="hover:"], .transition');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fadeIn');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        };
+
+        // Initialize animations when DOM is loaded
+        document.addEventListener('DOMContentLoaded', animateOnScroll);
+    </script>
+
+    <!-- Google Tag Manager (example) -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+</body>
+</html>
